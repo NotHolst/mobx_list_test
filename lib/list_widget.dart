@@ -15,9 +15,6 @@ class ListWidget<T> extends StatelessWidget {
       itemBuilder: (context, index) {
         return itemBuilder(items[index]);
       },
-      // children: [
-      //   for (var item in items) itemBuilder(item),
-      // ],
     );
   }
 }

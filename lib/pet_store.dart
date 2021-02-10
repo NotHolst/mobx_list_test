@@ -28,4 +28,12 @@ class Pet {
   String name;
 
   Pet(this.name);
+  @override
+  bool operator ==(Object other) {
+    if (other is Pet) return this.name == other.name;
+    return false;
+  }
+
+  @override
+  int get hashCode => name.hashCode;
 }

@@ -59,9 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
           itemBuilder: (pet) {
             return Row(
               children: [
-                Observer(builder: (_) {
-                  return Text(pet.name);
-                }),
+                Text(pet.name),
                 RaisedButton(
                   child: Text("X"),
                   onPressed: () {
